@@ -15,12 +15,9 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }} #d26458bb-9297-4918-90de-4f90fa496a08
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: ../../
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.repository }}:latest
-
-#d26458bb-9297-4918-90de-4f90fa496a08
