@@ -22,6 +22,9 @@ CMD ["node", "app"]
 # docker tag simpleapp d3r14n/simpleapp:latest
 # docker images
 # docker push d3r14n/simpleapp
+#
 # git remote add origin https://github.com/d3r14n/dockersimpleapp.git
 # git branch -M main
 # git push -u origin main
+#
+# docker tag simpleapp:1.0.0 d3r14n/simpleapp
